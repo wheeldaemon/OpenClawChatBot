@@ -1,6 +1,6 @@
-# QwenBot
+﻿# QwenBot
 
-Personal AI assistant in Telegram, powered by Qwen Code.
+Personal AI assistant in Telegram, powered by Qwen via OpenRouter.
 
 **Free**: 1000 requests/day, no subscriptions.
 
@@ -22,7 +22,7 @@ Personal AI assistant in Telegram, powered by Qwen Code.
 ### One-line install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/a-prs/QwenClaw/main/install.sh -o /tmp/install.sh && sudo bash /tmp/install.sh
+curl -fsSL https://raw.githubusercontent.com/a-prs/OpenClawChatBot/main/install.sh -o /tmp/install.sh && sudo bash /tmp/install.sh
 ```
 
 The installer will:
@@ -48,10 +48,10 @@ Then restart: `systemctl restart qwenbot`
 Just send a message to your bot in Telegram.
 
 **Commands:**
-- `/menu` — control panel
-- `/new` — start new session
-- `/sessions` — list sessions
-- `/status` — system status
+- `/menu` вЂ” control panel
+- `/new` вЂ” start new session
+- `/sessions` вЂ” list sessions
+- `/status` вЂ” system status
 
 **Inline buttons** for switching sessions, closing, and navigation.
 
@@ -84,19 +84,19 @@ Edit `/opt/qwenbot/.env`:
 ## Architecture
 
 ```
-GitHub: https://github.com/a-prs/QwenClaw
+GitHub: https://github.com/a-prs/OpenClawChatBot
 
 /opt/qwenbot/
   bot/
-    main.py          — Telegram bot (aiogram 3.x)
-    qwen_runner.py   — Qwen Code CLI subprocess runner
-    voice.py         — Groq Whisper API for voice
-    formatting.py    — Markdown to Telegram HTML
-    config.py        — .env loader
-    db.py            — SQLite sessions & history
-  workspace/         — Qwen Code working directory
-  data/              — SQLite database
-  .env               — configuration
+    main.py          вЂ” Telegram bot (aiogram 3.x)
+    qwen_runner.py   вЂ” Qwen Code CLI subprocess runner
+    voice.py         вЂ” Groq Whisper API for voice
+    formatting.py    вЂ” Markdown to Telegram HTML
+    config.py        вЂ” .env loader
+    db.py            вЂ” SQLite sessions & history
+  workspace/         вЂ” Qwen Code working directory
+  data/              вЂ” SQLite database
+  .env               вЂ” configuration
 ```
 
 ## Security
@@ -108,3 +108,4 @@ GitHub: https://github.com/a-prs/QwenClaw
 ## License
 
 MIT
+

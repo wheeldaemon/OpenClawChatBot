@@ -1,4 +1,4 @@
-"""Qwen Code CLI runner — subprocess execution with in-memory message queue."""
+﻿"""Qwen Code CLI runner вЂ” subprocess execution with in-memory message queue."""
 
 import asyncio
 import json
@@ -32,9 +32,9 @@ async def run_qwen(
     """Run Qwen Code CLI. If busy, queue the message.
 
     Returns:
-        {"status": "started"} — task launched
-        {"status": "queued", "position": N} — added to queue
-        {"status": "queue_full"} — rejected
+        {"status": "started"} вЂ” task launched
+        {"status": "queued", "position": N} вЂ” added to queue
+        {"status": "queue_full"} вЂ” rejected
     """
     global _is_busy
 
@@ -188,3 +188,4 @@ def _parse_output(raw: str) -> Optional[dict]:
             except json.JSONDecodeError:
                 continue
     return None
+
